@@ -31,7 +31,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md — Project setup: initialise package, install lowdb 7.0.1, seed data/cards.json, write failing test suite (RED gate)
-- [ ] 01-02-PLAN.md — Implement server/storage.js with readCards()/writeCards(), startup guard, and atomic writes (GREEN gate)
+- [x] 01-02-PLAN.md — Implement server/storage.js with readCards()/writeCards(), startup guard, and atomic writes (GREEN gate)
 
 ### Phase 2: REST API
 **Goal**: All four card operations are accessible via HTTP and verifiable with curl before any browser UI exists
