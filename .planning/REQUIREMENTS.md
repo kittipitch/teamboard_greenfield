@@ -16,7 +16,7 @@
 - [ ] **CARD-01**: User can add a text card to any column
 - [ ] **CARD-02**: User can edit the text of an existing card inline
 - [ ] **CARD-03**: User can delete any card
-- [ ] **CARD-04**: Cards persist between page loads (stored in JSON file on server)
+- [x] **CARD-04**: Cards persist between page loads (stored in JSON file on server)
 
 ## v2 Requirements
 
@@ -53,7 +53,7 @@
 | CARD-01 | Phase 3 | Pending |
 | CARD-02 | Phase 3 | Pending |
 | CARD-03 | Phase 3 | Pending |
-| CARD-04 | Phase 1 | Pending |
+| CARD-04 | Phase 1 | Complete |
 
 **Coverage:**
 - v1 requirements: 7 total

@@ -30,7 +30,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Project setup: initialise package, install lowdb 7.0.1, seed data/cards.json, write failing test suite (RED gate)
+- [x] 01-01-PLAN.md — Project setup: initialise package, install lowdb 7.0.1, seed data/cards.json, write failing test suite (RED gate)
 - [ ] 01-02-PLAN.md — Implement server/storage.js with readCards()/writeCards(), startup guard, and atomic writes (GREEN gate)
 
 ### Phase 2: REST API
@@ -65,6 +65,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Data Foundation | 0/2 | Not started | - |
+| 1. Data Foundation | 1/2 | In Progress|  |
 | 2. REST API | 0/? | Not started | - |
 | 3. Board UI | 0/? | Not started | - |
