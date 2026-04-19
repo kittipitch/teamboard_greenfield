@@ -12,7 +12,7 @@ A team can add and read retrospective cards across three categories in a browser
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] Cards persist between page loads (JSON file storage) — Validated in Phase 1: data-foundation
 
 ### Active
 
@@ -20,7 +20,6 @@ A team can add and read retrospective cards across three categories in a browser
 - [ ] Add a text card to any column
 - [ ] Edit a card's text after posting
 - [ ] Delete a card
-- [ ] Cards persist between page loads (JSON file storage)
 - [ ] Open access — no login required
 
 ### Out of Scope
@@ -50,7 +49,7 @@ A team can add and read retrospective cards across three categories in a browser
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
 | Single shared board | Simplicity; no session management or routing complexity | — Pending |
-| JSON file storage | Zero dependencies, trivially portable | — Pending |
+| JSON file storage | Zero dependencies, trivially portable | Validated Phase 1 — lowdb 7.0.1/steno, atomic writes, crash-safe |
 | No real-time sync | Eliminates WebSocket complexity; manual refresh is sufficient | — Pending |
 
 ## Evolution
@@ -71,4 +70,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-19 after initialization*
+*Last updated: 2026-04-19 after Phase 1 (data-foundation) completion*
