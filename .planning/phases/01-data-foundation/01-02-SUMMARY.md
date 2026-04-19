@@ -50,10 +50,10 @@ completed: 2026-04-19
 
 ## Performance
 
-- **Duration:** ~5 min
+- **Duration:** ~15 min
 - **Started:** 2026-04-19T14:50:00Z
-- **Completed:** 2026-04-19T14:51:11Z
-- **Tasks:** 1 of 2 (Task 2 is a human-verify checkpoint — stopped as required)
+- **Completed:** 2026-04-19T15:05:00Z
+- **Tasks:** 2 of 2 (all tasks complete — checkpoint approved)
 - **Files modified:** 1
 
 ## Accomplishments
@@ -62,16 +62,16 @@ completed: 2026-04-19
 - Startup guard: catch block backs up corrupt file to cards.json.bak, resets to `{"cards":[]}`, re-inits db
 - DATA_FILE path built using import.meta.dir — absolute path, stable regardless of where bun is launched from
 - bun test tests/storage.test.js: 4 passed, 0 failed (all CARD-04 criteria GREEN)
+- Human verification passed: malformed JSON startup guard confirmed — readCards() returned [], cards.json.bak created, cards.json reset, full test suite remained green
 
 ## Task Commits
 
 Each task was committed atomically:
 
 1. **Task 1: Implement server/storage.js (GREEN gate)** - `6bd4644` (feat)
+2. **Task 2: Manual verification — malformed file recovery and bak creation** - human-verify checkpoint, approved by user
 
 **Plan metadata:** (to be added after SUMMARY commit)
-
-_Note: Task 2 is a `checkpoint:human-verify` — executor stopped here per protocol. Manual verification of malformed-file recovery is pending user action._
 
 ## Files Created/Modified
 - `server/storage.js` - readCards()/writeCards() storage layer backed by lowdb 7.0.1/steno; exports the persistence contract for all subsequent phases
@@ -95,9 +95,16 @@ None. server/storage.js is fully wired — readCards() returns the real cards ar
 None - no external service configuration required.
 
 ## Next Phase Readiness
-- Task 2 checkpoint (human-verify) is pending: user must manually verify the malformed-file startup guard (run the steps in 01-02-PLAN.md Task 2)
-- After checkpoint approval, Plan 02 is complete and Phase 02 (REST API) can begin
+- Plan 02 fully complete — all tasks executed and human-verify checkpoint approved
 - server/storage.js is the single source of truth for card persistence — Phase 02 (cards-router.js) imports readCards()/writeCards() from here
+- Phase 01 (data-foundation) is complete; Phase 02 (REST API server) can begin
+
+## Self-Check: PASSED
+
+- FOUND: .planning/phases/01-data-foundation/01-02-SUMMARY.md
+- FOUND: server/storage.js
+- FOUND: commit 6bd4644
+- Tests: 4 pass, 0 fail
 
 ---
 *Phase: 01-data-foundation*
