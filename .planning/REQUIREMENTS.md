@@ -47,19 +47,19 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| BOARD-01 | — | Pending |
-| BOARD-02 | — | Pending |
-| BOARD-03 | — | Pending |
-| CARD-01 | — | Pending |
-| CARD-02 | — | Pending |
-| CARD-03 | — | Pending |
-| CARD-04 | — | Pending |
+| BOARD-01 | Phase 3 | Pending |
+| BOARD-02 | Phase 3 | Pending |
+| BOARD-03 | Phase 3 | Pending |
+| CARD-01 | Phase 3 | Pending |
+| CARD-02 | Phase 3 | Pending |
+| CARD-03 | Phase 3 | Pending |
+| CARD-04 | Phase 1 | Pending |
 
 **Coverage:**
 - v1 requirements: 7 total
-- Mapped to phases: 0
-- Unmapped: 7 ⚠️ (roadmap will assign)
+- Mapped to phases: 7
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-04-19*
-*Last updated: 2026-04-19 after initial definition*
+*Last updated: 2026-04-19 after roadmap creation — all 7 v1 requirements mapped*
