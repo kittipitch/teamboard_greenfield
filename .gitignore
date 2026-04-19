@@ -32,3 +32,13 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # Finder (MacOS) folder config
 .DS_Store
+
+# Editor-specific
+.cursor/
+.idea/
+
+# Claude Code user settings
+.claude/settings.local.json
+
+# Conversation logs
+convo.md
