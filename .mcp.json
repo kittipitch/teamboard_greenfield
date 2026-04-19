@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "mermaid": {
+      "command": "npx",
+      "args": ["-y", "mermaid-mcp-app"]
+    },
+    "sqlite": {
+      "command": "/opt/homebrew/bin/uvx",
+      "args": ["mcp-server-sqlite", "--db-path", "/Users/kk/git_projects/teamboard_greenfield/database/teamboard.db"]
+    }
+  }
+}
