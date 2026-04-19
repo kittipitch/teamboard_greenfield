@@ -71,7 +71,7 @@ Each task was committed atomically:
 1. **Task 1: Implement server/storage.js (GREEN gate)** - `6bd4644` (feat)
 2. **Task 2: Manual verification — malformed file recovery and bak creation** - human-verify checkpoint, approved by user
 
-**Plan metadata:** (to be added after SUMMARY commit)
+**Plan metadata:** `6529db5` (docs: complete plan)
 
 ## Files Created/Modified
 - `server/storage.js` - readCards()/writeCards() storage layer backed by lowdb 7.0.1/steno; exports the persistence contract for all subsequent phases
